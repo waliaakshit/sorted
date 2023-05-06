@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorted!</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<style>
+    body {
+      padding: 25px;
+      background-color: white;
+      color: black;
+      font-size: 20px;
+    }
+    
+    .dark-mode {
+      background-color: black;
+      color: white;
+    }
+     a:link, a:visited {
+  background-color: transparent;
+  color: rgb(9, 9, 211);
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color:transparent;
+}
+    </style>
+    <!--
+    </head>
+    <body>
+    
+    <script>
+    function myFunction() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+    </script>  
+<body>
+-->
+    <header>
+        <nav>
+            <div class="array-inputs">
+                <p>Size of the array:</p>
+                <input id="a_size" type="range" min=20 max=150 step=1 value=80>
+                <p>Speed of the algorithm:</p>
+                <input id="a_speed" type="range" min=1 max=5 step=1 value=4>
+                <button id="a_generate">Generate New Array!</button>
+                <button onclick="myFunction()">Toggle mode</button>
+                <script>
+                    function myFunction() {
+                       var element = document.body;
+                       element.classList.toggle("dark-mode");
+                    }
+                    </script>  
+            </div>
+
+            <div class="header_right">
+                <p class="nav-heading">Sorted!</p>
+
+                <div class="algos">
+                    <button >Bubble</button>
+                    <button >Selection</button>
+                    <button >Insertion</button>
+                    <button >Merge</button>
+                    <button >Quick</button>
+                    <button style="margin-right: 0px;">Heap</button>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+ <section>
+
+        <div id="Info_Cont1">
+            <p> </p>
+        </div>
+
+        <div id="array_container">
+            
+        </div>
+
+        <div id="Info_Cont2">
+            <p> </p>
+        </div>
+
+    </section>
+ 
+
+    <footer>
+     <a class="btn btn-outline-info btn-lg" href="https://github.com/waliaakshit.github.io/getpath" role="button" id="linkbttn">Path Finding Visualizer</a>
+    </footer>
+
+    <script src="./scripts/main.js"></script>   
+    <script src="./scripts/visualizations.js"></script> 
+
+    <script src="./scripts/bubble_sort.js"></script>
+    <script src="./scripts/selection_sort.js"></script>
+    <script src="./scripts/insertion_sort.js"></script>
+    <script src="./scripts/merge_sort.js"></script>
+    <script src="./scripts/quick_sort.js"></script>
+    <script src="./scripts/heap_sort.js"></script>
+</body>
+
+
+</html>
